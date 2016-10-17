@@ -174,6 +174,11 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 /**
+ * Load Portfolio file.
+ */
+require get_template_directory() . '/inc/portfolio-section.php';
+
+/**
  * Navigation Bootstrap
  */
 require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';

@@ -8789,37 +8789,14 @@ button.close {
   }
 }
 /* =============================== */
-/* Nav Bar Collapse Always Snippet */
-/* =============================== */
-/* line 5, sass/_mia-theme-styles.scss */
-.navbar-header {
-  float: none;
-}
-/* line 7, sass/_mia-theme-styles.scss */
-.navbar-header .navbar-toggle {
-  display: block;
-}
-/* line 10, sass/_mia-theme-styles.scss */
-.navbar-header .navbar-collapse.collapse {
-  display: none !important;
-}
-/* line 12, sass/_mia-theme-styles.scss */
-.navbar-header .navbar-collapse.collapse .navbar-nav {
-  float: none !important;
-}
-/* line 14, sass/_mia-theme-styles.scss */
-.navbar-header .navbar-collapse.collapse .navbar-nav > li {
-  float: none;
-}
-/* line 19, sass/_mia-theme-styles.scss */
-.navbar-header .navbar-collapse.collapse.in {
-  display: block !important;
-}
-
-/* =============================== */
 /* Common Styles                   */
 /* =============================== */
-/* line 28, sass/_mia-theme-styles.scss */
+/* line 5, sass/_mia-theme-styles.scss */
+a:focus, a:hover {
+  text-decoration: none;
+}
+
+/* line 8, sass/_mia-theme-styles.scss */
 .img-responsive {
   width: 100%;
 }
@@ -8827,20 +8804,20 @@ button.close {
 /* =============================== */
 /* Slider Styles                   */
 /* =============================== */
-/* line 37, sass/_mia-theme-styles.scss */
+/* line 17, sass/_mia-theme-styles.scss */
 .carousel .carousel-control.left {
   background-image: none;
 }
-/* line 40, sass/_mia-theme-styles.scss */
+/* line 20, sass/_mia-theme-styles.scss */
 .carousel .carousel-control.right {
   background-image: none;
 }
-/* line 43, sass/_mia-theme-styles.scss */
+/* line 23, sass/_mia-theme-styles.scss */
 .carousel .carousel-control .glyphicon-chevron-left,
 .carousel .carousel-control .icon-prev {
   left: 15%;
 }
-/* line 47, sass/_mia-theme-styles.scss */
+/* line 27, sass/_mia-theme-styles.scss */
 .carousel .carousel-control .glyphicon-chevron-right,
 .carousel .carousel-control .icon-next {
   right: 15%;
