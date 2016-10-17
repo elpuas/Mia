@@ -1,0 +1,51 @@
+/* =============================== */
+/* Nav Bar Collapse Always Snippet */
+/* =============================== */
+
+.navbar-header {
+    float: none;
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+        .navbar-nav {
+            float: none!important;
+            >li {
+                float: none;
+            }
+        }
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+}
+
+/* =============================== */
+/* Common Styles                   */
+/* =============================== */
+
+.img-responsive {
+  width: 100%;
+}
+
+/* =============================== */
+/* Slider Styles                   */
+/* =============================== */
+
+.carousel {
+    .carousel-control.left {
+        background-image: none;
+    }
+    .carousel-control.right {
+        background-image: none;
+    }
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .icon-prev {
+        left: 15%;
+    }
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-next {
+        right: 15%;
+    }
+}
