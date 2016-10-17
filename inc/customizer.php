@@ -11,6 +11,49 @@
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
 function mia_customize_register( $wp_customize ) {
+    $wp_customize->add_setting( 'mia_logo' ); // Add setting for logo uploader
+         
+    // Add control for logo uploader (actual uploader)
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'mia_logo', array(
+        'label'    => __( 'Upload Logo (replaces text)', 'mia' ),
+        'section'  => 'title_tagline',
+        'settings' => 'mia_logo',
+    ) ) );
+    // Add image slider
+    $wp_customize->add_section( 'slides', array(
+    'title'          => 'Slides',
+    'priority'       => 25,
+    ) );
+
+    $wp_customize->add_setting( 'first_slide', array(
+    'default'        => '',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'first_slide', array(
+    'label'   => 'First Slide',
+    'section' => 'slides',
+    'settings'   => 'first_slide',
+    ) ) );
+
+    $wp_customize->add_setting( 'second_slide', array(
+    'default'        => '',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'second_slide', array(
+    'label'   => 'Second Slide',
+    'section' => 'slides',
+    'settings'   => 'second_slide',
+    ) ) );
+
+    $wp_customize->add_setting( 'third_slide', array(
+    'default'        => '',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'third_slide', array(
+    'label'   => 'Third Slide',
+    'section' => 'slides',
+    'settings'   => 'third_slide',
+    ) ) );
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
