@@ -28,9 +28,9 @@
     <div class="site-branding">
         <?php if ( get_theme_mod( 'mia_logo' ) ) : ?>
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="site-logo" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
- 
+
         <img src="<?php echo get_theme_mod( 'mia_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
- 
+
     </a>
 
             <?php else : ?>
@@ -44,7 +44,7 @@
 
                 <?php endif; ?>
     </div><!-- .site-branding -->
-<a type="button" class="fa fa-bars fa-5x" data-toggle="modal" data-target="#nav-modal">&nbsp;</a><!-- #site-navigation -->
+<a type="button" class="fa fa-bars fa-3x" data-toggle="modal" data-target="#nav-modal">&nbsp;</a><!-- #site-navigation -->
 </header>
 <!-- #masthead -->
 

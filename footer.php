@@ -19,7 +19,7 @@
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'mia' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'mia' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'mia' ), 'mia', '<a href="http://alfredonavas.com" rel="designer">3LPU4S</a>' ); ?>
+			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'mia' ), 'Mia', '<a href="http://alfredonavas.com" rel="designer">3LPU4S</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- .container -->
@@ -28,7 +28,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
          <div class="modal-header">
-        <a class="fa fa-close fa-5x" data-dismiss="modal"></a>
+        <a class="fa fa-close fa-3x" data-dismiss="modal"></a>
         </div>
         <div class="menu-primary">
            <?php

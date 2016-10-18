@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -8797,6 +8798,11 @@ a:focus, a:hover {
 }
 
 /* line 8, sass/_mia-theme-styles.scss */
+a:visited {
+  color: #337ab7;
+}
+
+/* line 11, sass/_mia-theme-styles.scss */
 .img-responsive {
   width: 100%;
 }
@@ -8804,21 +8810,80 @@ a:focus, a:hover {
 /* =============================== */
 /* Slider Styles                   */
 /* =============================== */
-/* line 17, sass/_mia-theme-styles.scss */
+/* line 20, sass/_mia-theme-styles.scss */
 .carousel .carousel-control.left {
   background-image: none;
 }
-/* line 20, sass/_mia-theme-styles.scss */
+/* line 23, sass/_mia-theme-styles.scss */
 .carousel .carousel-control.right {
   background-image: none;
 }
-/* line 23, sass/_mia-theme-styles.scss */
+/* line 26, sass/_mia-theme-styles.scss */
 .carousel .carousel-control .glyphicon-chevron-left,
 .carousel .carousel-control .icon-prev {
   left: 15%;
 }
-/* line 27, sass/_mia-theme-styles.scss */
+/* line 30, sass/_mia-theme-styles.scss */
 .carousel .carousel-control .glyphicon-chevron-right,
 .carousel .carousel-control .icon-next {
   right: 15%;
 }
+
+/* =============================== */
+/* Isotope Styles                  */
+/* =============================== */
+/* Start: Recommended Isotope styles */
+/**** Isotope Filtering ****/
+/* line 42, sass/_mia-theme-styles.scss */
+.isotope-item {
+  z-index: 2;
+}
+
+/* line 46, sass/_mia-theme-styles.scss */
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+/* line 53, sass/_mia-theme-styles.scss */
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+
+/* line 62, sass/_mia-theme-styles.scss */
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}
+
+/* line 70, sass/_mia-theme-styles.scss */
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: -o-transform, opacity;
+  transition-property: transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+/* line 80, sass/_mia-theme-styles.scss */
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
