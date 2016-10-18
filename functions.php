@@ -146,6 +146,19 @@ return $classes;
 }
 add_filter( 'body_class', 'add_slug_body_class' );
 
+add_filter('pre_get_posts', 'query_post_type');
+function query_post_type($query) {
+  if( is_category() ) {
+    $post_type = get_query_var('post_type');
+    if($post_type)
+        $post_type = $post_type;
+    else
+        $post_type = array('nav_menu_item', 'post', 'portfolio'); // don't forget nav_menu_item to allow menus to work!
+    $query->set('post_type',$post_type);
+    return $query;
+    }
+}
+
 /**
 
 /**
