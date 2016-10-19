@@ -12,7 +12,7 @@ get_header(); ?>
 		$terms = get_terms('category', array(
  	'post_type' => array('portfolio'),
  	'fields' => 'all',
-  'exclude' => array(4), // Manually Exclude Categories * NEED A FIX *
+  'exclude' => array(7), // Manually Exclude Categories * NEED A FIX *
 )); // get all categories, but you can use any taxonomy
 		$count = count($terms); //How many are they?
 		if ( $count > 0 ){  //If there are more than 0 terms
@@ -35,7 +35,7 @@ get_header(); ?>
 	?>
 	<div class="<?php echo $termsString; ?> element-item"> <?php // 'item' is used as an identifier (see Setp 5, line 6) ?>
     <?php if ( has_post_thumbnail()) : ?>
-<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+<a class="overlay" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
 <?php the_post_thumbnail('medium'); ?>
 </a>
 <?php endif; ?>

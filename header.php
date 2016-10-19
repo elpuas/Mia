@@ -43,7 +43,7 @@
                 </hgroup>
 
                 <?php endif; ?>
-								<a type="button" class="fa fa-bars fa-3x theme-hamburguer" data-toggle="modal" data-target="#nav-modal">&nbsp;</a><!-- #site-navigation -->
+								<a type="button" class="fa fa-bars fa-2x theme-hamburguer" data-toggle="modal" data-target="#nav-modal">&nbsp;</a><!-- #site-navigation -->
     </div><!-- .site-branding -->
 </header>
 <!-- #masthead -->

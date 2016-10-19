@@ -1,17 +1,83 @@
 /* =============================== */
 /* Common Styles                   */
 /* =============================== */
-
+a {
+  color: $brand-secondary;
+}
 a:focus, a:hover {
  text-decoration: none;
 }
 a:visited {
-    color: $brand-primary;
+    color: $brand-secondary;
 }
 .img-responsive {
   width: 100%;
 }
 
+input[type="submit"] {
+  padding:10px 10px;
+  color:$brand-tertiary;
+  border:solid 1px;
+  box-shadow: none;
+  text-shadow: none;
+  background: transparent;
+  top: -2px;
+  position: relative;
+
+}
+input[type="submit"]:hover {
+  box-shadow: none;
+  text-shadow: none;
+  background: transparent;
+  color: $brand-secondary;
+  border-color: $brand-secondary;
+}
+
+span.comments-link {
+    display: none;
+}
+
+nav.navigation.post-navigation {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    .nav-links a {
+    color: $brand-tertiary;
+    font-size: 14px;
+    padding: 10px 15px;
+    border: solid 1px;
+    border-radius: 3px;
+  }
+  .nav-links a:hover {
+    color: $brand-secondary
+  }
+}
+
+.overlay {
+  position: relative;
+  display: block;
+}
+
+.overlay:before{
+  position: absolute;
+  font-family: FontAwesome;
+  content:"\f08e";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: none;
+  z-index:0;
+  color: $brand-white;
+  padding-top: 35%;
+  padding-left: 40%;
+  font-size: 4em;
+}
+
+.overlay:hover:before{
+  display: block;
+  background-color: $brand-secondary;
+  opacity: 0.7;
+}
 
 
 /* =============================== */
@@ -48,14 +114,24 @@ div#nav-modal {
                     color: #1ABC9C;
                     float: right;
                     cursor: pointer;
+                    font-size: 3em;
                 }
             }
             .menu-primary {
-                .nav>li>a {
-                    padding: 0;
-                    font-size: 8rem;
-                    color: $brand-main;
-                    line-height: 1.25em;
+                .nav{
+                  >li{
+                   float: none;
+                    >a {
+                      padding: 0;
+                      font-size: 8rem;
+                      color: $brand-main;
+                      line-height: 1.25em;
+                  }
+                }
+              }
+                .nav>li>a:hover {
+                  background-color: transparent;
+                  color:$brand-tertiary;
                 }
             }
         }
@@ -126,6 +202,27 @@ body.single-portfolio {
 /* =============================== */
 /* Isotope Styles                  */
 /* =============================== */
+
+ul#filters {
+  list-style: none;
+  margin:0;
+  padding: 0;
+  margin-bottom: 1em;
+  li {
+    display: inline-block;
+    a {
+      padding:10px 15px;
+      color:$brand-tertiary;
+      font-size: 16px;
+      border:solid 1px;
+      border-radius: 3px;
+    }
+    a:hover {
+      color:$brand-secondary;
+    }
+  }
+
+}
 
 .isotope-item {
   z-index: 2;
@@ -205,7 +302,7 @@ body.single-portfolio {
         -ms-transition: 0.3s all 0s;
         transition: 0.3s all 0s;
         color: $brand-main;
-        font-size: 1.25em;
+        font-size: 1em;
     }
 
     a.sc-icons:visited,
@@ -220,22 +317,81 @@ body.single-portfolio {
       color: $brand-main;
       font-family: Arial,sans-serif;
       font-size: 14px;
+      padding-top: 10px;
     a {
       color: $brand-main;
     }
   }
 }
 
+/* =============================== */
+/* Sidebar                         */
+/* =============================== */
+
+aside#secondary {
+  h2 {
+    font-size: 2.75rem;
+
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      float: none;
+      a {
+        color: $brand-tertiary;
+
+      }
+      a:hover {
+        color: $brand-secondary;
+      }
+    }
+  }
+  .search-form label {
+    width: 75%;
+}
+input[type="submit"] {
+  top: -2px;
+  position: relative;
+}
+  input[type=search] {
+      background: transparent;
+      border: 1px solid $brand-tertiary;
+      color: $brand-tertiary;
+      padding-top: 0;
+      width: 100%;
+  }
+  input[type=search]::-webkit-input-placeholder {
+    color: $brand-tertiary;
+    font-size: 14px;
+  }
+  input[type=search]:-moz-placeholder {
+    color: $brand-tertiary;
+    font-size: 14px;
+  }
+  input[type=search]::-moz-placeholder {
+    color: $brand-tertiary;
+    font-size: 14px;
+  }
+  input[type=search]:-ms-input-placeholder {
+    color: $brand-tertiary;
+    font-size: 14px;
+  }
+}
 
 /* =============================== */
 /* Media Queries                  */
 /* =============================== */
 
 @media (max-width: $screen-phone) {
+  .fa-3x {
+    font-size: 2em;
+}
   .modal-content {
     padding: 10% 5% !important;
     .fa-5x {
-    font-size: 3em;
+    font-size: 2em;
     }
   }
     .menu-primary {
@@ -250,6 +406,14 @@ body.single-portfolio {
                 }
             }
         }
+    }
+    ul#filters {
+      li {
+        a {
+          padding:3px 5px;
+        }
+      }
+
     }
     #isotope-list {
       .element-item {
@@ -270,7 +434,22 @@ body.single-portfolio {
 
 
 @media (max-width: $screen-tablet) {
-
+  .fa-3x {
+    font-size: 2em;
+  }
+  .fa-5x {
+  font-size: 2em;
+  }
+  .menu-primary {
+      .nav {
+          margin: 0;
+          >li {
+              >a {
+                  font-size: 5rem;
+              }
+          }
+      }
+  }
   #isotope-list {
     .element-item {
       width: 50%;

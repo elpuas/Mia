@@ -24,7 +24,13 @@
 			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', '3LPU4S' ), 'Mia', '<a href="http://alfredonavas.com/" rel="designer">3LPU4S</a>' ); ?>
 		</div><!-- .site-info -->
                 </div><!--col-md-8 -->
-            <div class="col-md-4 col-sm-4 col-xs-12 pull-right icons-box-footer" style="text-align:right;"><a class="sc-icons" href="twitter.com/3lpu4s"><i class="fa fa-twitter green"></i></a><a class="sc-icons" href="https://www.facebook.com/crwebsolutions"><i class="fa fa-facebook-square green"></i></a><a class="sc-icons" href="http://www.linkedin.com/pub/alfredo-navas-fernandini/28/489/62a"><i class="fa fa-linkedin green"></i></a><a class="sc-icons" href="https://plus.google.com/u/0/109068090628310748694"><i class="fa fa-google-plus-square green"></i></a><a class="sc-icons" href="https://github.com/elpuas"><i class="fa fa-github-alt green"></i></a></div><!-- col-md-4 -->
+            <div class="col-md-4 col-sm-4 col-xs-12 pull-right icons-box-footer" style="text-align:right;">
+							<a class="sc-icons" href="twitter.com/3lpu4s"><i class="fa fa-twitter green"></i></a>
+							<a class="sc-icons" href="https://www.facebook.com/elpuasdev"><i class="fa fa-facebook-square green"></i></a>
+							<a class="sc-icons" href="http://www.linkedin.com/pub/alfredo-navas-fernandini/28/489/62a"><i class="fa fa-linkedin green"></i></a>
+							<a class="sc-icons" href="https://plus.google.com/u/0/109068090628310748694"><i class="fa fa-google-plus-square green"></i></a>
+							<a class="sc-icons" href="https://github.com/elpuas"><i class="fa fa-github-alt green"></i></a>
+						</div><!-- col-md-4 -->
 	</footer><!-- #colophon -->
 </div><!-- .container -->
 </div><!-- .container-fluid -->

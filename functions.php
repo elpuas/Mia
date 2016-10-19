@@ -240,6 +240,11 @@ require get_template_directory() . '/inc/jetpack.php';
 require get_template_directory() . '/inc/portfolio-section.php';
 
 /**
+ * Load Portfolio file.
+ */
+require get_template_directory() . '/inc/disable-comments.php';
+
+/**
  * Navigation Bootstrap
  */
 require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
