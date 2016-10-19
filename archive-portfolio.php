@@ -12,7 +12,7 @@ get_header(); ?>
 		$terms = get_terms('category', array(
  	'post_type' => array('portfolio'),
  	'fields' => 'all',
-  'exclude' => array(7),
+  'exclude' => array(4), // Manually Exclude Categories * NEED A FIX *
 )); // get all categories, but you can use any taxonomy
 		$count = count($terms); //How many are they?
 		if ( $count > 0 ){  //If there are more than 0 terms

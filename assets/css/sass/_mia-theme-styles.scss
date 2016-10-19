@@ -12,6 +12,8 @@ a:visited {
   width: 100%;
 }
 
+
+
 /* =============================== */
 /* Hamburguer Styles               */
 /* =============================== */
@@ -19,6 +21,10 @@ a:visited {
   float: right;
   color: $brand-white;
   margin-top: 50px;
+  cursor: pointer;
+}
+a:hover {
+  color: $brand-secondary;
 }
 /* =============================== */
 /* Nav Modal Styles                */
@@ -41,6 +47,7 @@ div#nav-modal {
                 a.fa.fa-close.fa-5x {
                     color: #1ABC9C;
                     float: right;
+                    cursor: pointer;
                 }
             }
             .menu-primary {
@@ -77,6 +84,45 @@ div#nav-modal {
         right: 15%;
     }
 }
+/* =============================== */
+/* Homepage Styles                  */
+/* =============================== */
+
+body.page-template-homepage {
+  .theme-icon-container {
+    text-align: center;
+  }
+  h2 {
+    color: $brand-secondary;
+    font-size: 4rem;
+  }
+  .textwidget {
+    font-size: 2.5rem;
+    color: $brand-tertiary;
+    a {
+      color: $brand-secondary;
+    }
+  }
+}
+/* =============================== */
+/* Single Portfolio Styles         */
+/* =============================== */
+
+body.single-portfolio {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      float: left;
+      .devicons {
+        font-size: 7.25rem;
+      }
+    }
+  }
+}
+
+
 /* =============================== */
 /* Isotope Styles                  */
 /* =============================== */

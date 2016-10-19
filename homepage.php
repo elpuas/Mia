@@ -60,7 +60,7 @@ get_header(); ?>
 
 		endif; ?>
 <div class="row">
-  <div class="col-md-3 col-sm-3"><img class="theme-frontpage-icon" src="<?php echo get_theme_mod('first_icon') ?>" alt="Front End Developer"></div>
+  <div class="col-md-3 col-sm-3 theme-icon-container"><img class="theme-frontpage-icon" src="<?php echo get_theme_mod('first_icon') ?>" alt="Front End Developer"></div>
   <div class="col-md-9 col-sm-9">
     <?php
     if(is_active_sidebar('home-area-1')){
@@ -70,7 +70,7 @@ get_header(); ?>
   </div>
 </div>
 <div class="row">
-  <div class="col-md-3 col-sm-3"><img class="theme-frontpage-icon" src="<?php echo get_theme_mod('second_icon') ?>" alt="UI/UX"></div>
+  <div class="col-md-3 col-sm-3 theme-icon-container"><img class="theme-frontpage-icon" src="<?php echo get_theme_mod('second_icon') ?>" alt="UI/UX"></div>
   <div class="col-md-9 col-sm-9">
     <?php
     if(is_active_sidebar('home-area-2')){
@@ -80,7 +80,7 @@ get_header(); ?>
   </div>
 </div>
 <div class="row">
-  <div class="col-md-3 col-sm-3"><img class="theme-frontpage-icon" src="<?php echo get_theme_mod('third_icon') ?>" alt="Blog"></div>
+  <div class="col-md-3 col-sm-3 theme-icon-container"><img class="theme-frontpage-icon" src="<?php echo get_theme_mod('third_icon') ?>" alt="Blog"></div>
   <div class="col-md-9 col-sm-9">
     <?php query_posts( 'category_name=blog&posts_per_page=1' ); ?>
     <?php while ( have_posts() ) : the_post(); ?>
