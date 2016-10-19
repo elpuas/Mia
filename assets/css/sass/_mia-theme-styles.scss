@@ -13,10 +13,55 @@ a:visited {
 }
 
 /* =============================== */
+/* Hamburguer Styles               */
+/* =============================== */
+.theme-hamburguer {
+  float: right;
+  color: $brand-white;
+  margin-top: 50px;
+}
+/* =============================== */
+/* Nav Modal Styles                */
+/* =============================== */
+
+div#nav-modal {
+    width: 100%;
+    padding-right: 0!important;
+    background: $brand-secondary;
+    .modal-dialog {
+        width: 100%;
+        margin: 0;
+        .modal-content {
+            background: 0 0;
+            box-shadow: none;
+            border: none;
+            padding: 10% 15%;
+            .modal-header {
+                border: none;
+                a.fa.fa-close.fa-5x {
+                    color: #1ABC9C;
+                    float: right;
+                }
+            }
+            .menu-primary {
+                .nav>li>a {
+                    padding: 0;
+                    font-size: 8rem;
+                    color: $brand-main;
+                    line-height: 1.25em;
+                }
+            }
+        }
+    }
+}
+
+/* =============================== */
 /* Slider Styles                   */
 /* =============================== */
 
 .carousel {
+    max-height: 400px;
+    overflow: hidden;
     .carousel-control.left {
         background-image: none;
     }
@@ -35,9 +80,6 @@ a:visited {
 /* =============================== */
 /* Isotope Styles                  */
 /* =============================== */
-/* Start: Recommended Isotope styles */
-
-/**** Isotope Filtering ****/
 
 .isotope-item {
   z-index: 2;
@@ -87,4 +129,109 @@ a:visited {
           transition-duration: 0s;
 }
 
-/* End: Recommended Isotope styles */
+#isotope-list {
+  .element-item {
+    width: 33%;
+    img.size-medium {
+      width: 100% !important;
+    }
+  }
+}
+/* =============================== */
+/* Footer Styles                  */
+/* =============================== */
+.container-fluid.footer-container {
+    min-height: 50px;
+    background: $brand-tertiary;
+    padding-top: 15px;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    .fa {
+      display: inline-block;
+    }
+
+    a.sc-icons {
+        padding: 10px;
+        opacity: 1;
+        -webkit-transition: 0.3s all 0s;
+        -moz-transition: 0.3s all 0s;
+        -o-transition: 0.3s all 0s;
+        -ms-transition: 0.3s all 0s;
+        transition: 0.3s all 0s;
+        color: $brand-main;
+        font-size: 1.25em;
+    }
+
+    a.sc-icons:visited,
+    a.sc-icons:hover {
+        color: $brand-secondary;
+    }
+
+    a.sc-icons:hover {
+        opacity: 1;
+    }
+    .site-info {
+      color: $brand-main;
+      font-family: Arial,sans-serif;
+      font-size: 14px;
+    a {
+      color: $brand-main;
+    }
+  }
+}
+
+
+/* =============================== */
+/* Media Queries                  */
+/* =============================== */
+
+@media (max-width: $screen-phone) {
+  .modal-content {
+    padding: 10% 5% !important;
+    .fa-5x {
+    font-size: 3em;
+    }
+  }
+    .menu-primary {
+        .nav {
+            margin: 0;
+            >li {
+                >a {
+                    padding: 0;
+                    font-size: 5rem !important;
+                    color: $brand-main;
+                    line-height: 1.25em;
+                }
+            }
+        }
+    }
+    #isotope-list {
+      .element-item {
+        width: 99% !important;
+        img.size-medium {
+          width: 100% !important;
+        }
+      }
+    }
+    .site-info {
+      text-align: center;
+    }
+    .icons-box-footer {
+    text-align: center !important;
+    }
+}
+
+
+
+@media (max-width: $screen-tablet) {
+
+  #isotope-list {
+    .element-item {
+      width: 50%;
+      img.size-medium {
+        width: 100% !important;
+      }
+    }
+  }
+
+}

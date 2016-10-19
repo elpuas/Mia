@@ -1,7 +1,7 @@
 <?php /* Template Name: Homepage */
 
 get_header(); ?>
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">  
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
@@ -59,7 +59,42 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
-
+<div class="row">
+  <div class="col-md-3 col-sm-3"><img class="theme-frontpage-icon" src="<?php echo get_theme_mod('first_icon') ?>" alt="Front End Developer"></div>
+  <div class="col-md-9 col-sm-9">
+    <?php
+    if(is_active_sidebar('home-area-1')){
+      dynamic_sidebar('home-area-1');
+    }
+    ?>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-3 col-sm-3"><img class="theme-frontpage-icon" src="<?php echo get_theme_mod('second_icon') ?>" alt="UI/UX"></div>
+  <div class="col-md-9 col-sm-9">
+    <?php
+    if(is_active_sidebar('home-area-2')){
+      dynamic_sidebar('home-area-2');
+    }
+    ?>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-3 col-sm-3"><img class="theme-frontpage-icon" src="<?php echo get_theme_mod('third_icon') ?>" alt="Blog"></div>
+  <div class="col-md-9 col-sm-9">
+    <?php query_posts( 'category_name=blog&posts_per_page=1' ); ?>
+    <?php while ( have_posts() ) : the_post(); ?>
+      <header class="widget_title">
+    		<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+    	</header><!-- .entry-header -->
+    	<div class="textwidget">
+    		<?php
+    			the_excerpt();
+    		?>
+  <?php endwhile; ?>
+  </div>
+</div>
+</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 	</div><!-- col-md-12-->

@@ -104,6 +104,24 @@ function mia_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Home Area 1', 'mia' ),
+		'id'            => 'home-area-1',
+		'description'   => esc_html__( 'Add widgets here.', 'mia' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Home Area 2', 'mia' ),
+		'id'            => 'home-area-2',
+		'description'   => esc_html__( 'Add widgets here.', 'mia' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'mia_widgets_init' );
 
@@ -156,7 +174,9 @@ $classes[] = $post->post_type . '-' . $post->post_name;
 return $classes;
 }
 add_filter( 'body_class', 'add_slug_body_class' );
-
+/**
+ * Query Custom Post Type
+ */
 add_filter('pre_get_posts', 'query_post_type');
 function query_post_type($query) {
   if( is_category() ) {
@@ -169,9 +189,26 @@ function query_post_type($query) {
     return $query;
     }
 }
-
 /**
-
+ * Filter the "read more" excerpt string link to the post.
+ *
+ * @param string $more "Read more" excerpt string.
+ * @return string (Maybe) modified "read more" excerpt string.
+ */
+function wpdocs_excerpt_more( $more ) {
+    return sprintf( '<a class="read-more" href="%1$s">%2$s</a>',
+        get_permalink( get_the_ID() ),
+        __( ' Read More', 'textdomain' )
+    );
+}
+add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+/**
+ * Limit excerpt.
+ */
+function custom_excerpt_length( $length ) {
+	return 25;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 /**
  * Implement the Custom Header feature.
  */

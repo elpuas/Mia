@@ -14,21 +14,26 @@
 </div><!-- #content -->
 </div><!-- #page -->
 </div><!-- .container -->
+<div class="container-fluid footer-container">
 <div class="container">
 	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="col-md-8 col-sm-8 col-xs-12">
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'mia' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'mia' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'mia' ), 'Mia', '<a href="http://alfredonavas.com" rel="designer">3LPU4S</a>' ); ?>
+			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', '3LPU4S' ), 'Mia', '<a href="http://alfredonavas.com/" rel="designer">3LPU4S</a>' ); ?>
 		</div><!-- .site-info -->
+                </div><!--col-md-8 -->
+            <div class="col-md-4 col-sm-4 col-xs-12 pull-right icons-box-footer" style="text-align:right;"><a class="sc-icons" href="twitter.com/3lpu4s"><i class="fa fa-twitter green"></i></a><a class="sc-icons" href="https://www.facebook.com/crwebsolutions"><i class="fa fa-facebook-square green"></i></a><a class="sc-icons" href="http://www.linkedin.com/pub/alfredo-navas-fernandini/28/489/62a"><i class="fa fa-linkedin green"></i></a><a class="sc-icons" href="https://plus.google.com/u/0/109068090628310748694"><i class="fa fa-google-plus-square green"></i></a><a class="sc-icons" href="https://github.com/elpuas"><i class="fa fa-github-alt green"></i></a></div><!-- col-md-4 -->
 	</footer><!-- #colophon -->
 </div><!-- .container -->
+</div><!-- .container-fluid -->
 <!-- Navigation Modal -->
 <div class="modal fade" id="nav-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
          <div class="modal-header">
-        <a class="fa fa-close fa-3x" data-dismiss="modal"></a>
+        <a class="fa fa-close fa-5x" data-dismiss="modal"></a>
         </div>
         <div class="menu-primary">
            <?php

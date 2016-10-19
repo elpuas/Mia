@@ -3,8 +3,9 @@ jQuery(function ($) {
 
 	var $container = $('#isotope-list'); //The ID for the list with all the blog posts
 	$container.isotope({ //Isotope options, 'item' matches the class in the PHP
-		itemSelector : '.item',
-  		layoutMode : 'masonry'
+		itemSelector : '.element-item',
+		percentPosition: true,
+  	layoutMode : 'fitRows'
 	});
 
 	//Add the class selected to the item that is clicked, and remove from the others
@@ -29,3 +30,6 @@ jQuery(function ($) {
 	});
 
 });
+
+// Slogan
+console.log('Made with passion and lots of coffee, from the beautiful Costa Rica');
