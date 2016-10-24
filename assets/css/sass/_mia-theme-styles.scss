@@ -23,6 +23,7 @@ input[type="submit"] {
   background: transparent;
   top: -2px;
   position: relative;
+  font-size: 12px;
 
 }
 input[type="submit"]:hover {
@@ -79,8 +80,29 @@ nav.navigation.post-navigation {
   opacity: 0.7;
 }
 
+
+.entry-meta {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color: #84ffe4;
+    text-transform: uppercase;
+      span.posted-on:before {
+        font-family: FontAwesome;
+        content: "\f073";
+        font-size: 14px;
+        margin-right: 5px;
+      }
+      span.byline:before {
+        font-family: FontAwesome;
+        content: "\f21b";
+        font-size: 14px;
+        margin-left:5px;
+
+      }
+}
+
 aside#secondary {
-    padding-top: 110px;
+    padding-top: 43%;
 }
 
 /* =============================== */
@@ -188,6 +210,9 @@ body.page-template-homepage {
 /* =============================== */
 
 body.single-portfolio {
+  aside#secondary {
+    padding-top: 31%;
+  }
   ul {
     list-style: none;
     margin: 0;
@@ -200,9 +225,12 @@ body.single-portfolio {
     }
   }
 }
-body.single {
+body.single-post {
   header.entry-header {
       border-bottom: 2em solid $brand-tertiary;
+  }
+  aside#secondary {
+    padding-top: 36%;
   }
 }
 /* =============================== */
