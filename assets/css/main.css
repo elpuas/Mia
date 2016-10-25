@@ -9061,21 +9061,48 @@ body.single-post aside#secondary {
 }
 
 /* =============================== */
+/* Page Profile                    */
+/* =============================== */
+/* line 242, sass/_mia-theme-styles.scss */
+body.page-profile header.entry-header {
+  border-bottom: 2em solid #404040;
+}
+/* line 245, sass/_mia-theme-styles.scss */
+body.page-profile ul.workflow-icons {
+  list-style: none;
+  margin: 25px 0 10px 0;
+  padding: 0;
+}
+/* line 249, sass/_mia-theme-styles.scss */
+body.page-profile ul.workflow-icons li {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+/* line 252, sass/_mia-theme-styles.scss */
+body.page-profile ul.workflow-icons li span {
+  font-size: 6rem;
+}
+/* line 257, sass/_mia-theme-styles.scss */
+body.page-profile aside#secondary {
+  padding-top: 31%;
+}
+
+/* =============================== */
 /* Archive Styles         */
 /* =============================== */
-/* line 240, sass/_mia-theme-styles.scss */
+/* line 266, sass/_mia-theme-styles.scss */
 body.archive .page-header {
   border-bottom: 2em solid #404040;
 }
-/* line 243, sass/_mia-theme-styles.scss */
+/* line 269, sass/_mia-theme-styles.scss */
 body.archive h2.entry-title {
   margin-top: 0;
 }
-/* line 245, sass/_mia-theme-styles.scss */
+/* line 271, sass/_mia-theme-styles.scss */
 body.archive h2.entry-title a {
   color: #404040;
 }
-/* line 248, sass/_mia-theme-styles.scss */
+/* line 274, sass/_mia-theme-styles.scss */
 body.archive h2.entry-title a:hover {
   color: #84ffe7;
 }
@@ -9083,18 +9110,18 @@ body.archive h2.entry-title a:hover {
 /* =============================== */
 /* Isotope Styles                  */
 /* =============================== */
-/* line 258, sass/_mia-theme-styles.scss */
+/* line 284, sass/_mia-theme-styles.scss */
 ul#filters {
   list-style: none;
   margin: 0;
   padding: 0;
   margin-bottom: 1em;
 }
-/* line 263, sass/_mia-theme-styles.scss */
+/* line 289, sass/_mia-theme-styles.scss */
 ul#filters li {
   display: inline-block;
 }
-/* line 265, sass/_mia-theme-styles.scss */
+/* line 291, sass/_mia-theme-styles.scss */
 ul#filters li a {
   padding: 10px 15px;
   color: #404040;
@@ -9102,24 +9129,24 @@ ul#filters li a {
   border: solid 1px;
   border-radius: 3px;
 }
-/* line 272, sass/_mia-theme-styles.scss */
+/* line 298, sass/_mia-theme-styles.scss */
 ul#filters li a:hover {
   color: #84ffe7;
 }
 
-/* line 279, sass/_mia-theme-styles.scss */
+/* line 305, sass/_mia-theme-styles.scss */
 .isotope-item {
   z-index: 2;
 }
 
-/* line 283, sass/_mia-theme-styles.scss */
+/* line 309, sass/_mia-theme-styles.scss */
 .isotope-hidden.isotope-item {
   pointer-events: none;
   z-index: 1;
 }
 
 /**** Isotope CSS3 transitions ****/
-/* line 290, sass/_mia-theme-styles.scss */
+/* line 316, sass/_mia-theme-styles.scss */
 .isotope,
 .isotope .isotope-item {
   -webkit-transition-duration: 0.8s;
@@ -9129,7 +9156,7 @@ ul#filters li a:hover {
   transition-duration: 0.8s;
 }
 
-/* line 299, sass/_mia-theme-styles.scss */
+/* line 325, sass/_mia-theme-styles.scss */
 .isotope {
   -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
@@ -9138,7 +9165,7 @@ ul#filters li a:hover {
   transition-property: height, width;
 }
 
-/* line 307, sass/_mia-theme-styles.scss */
+/* line 333, sass/_mia-theme-styles.scss */
 .isotope .isotope-item {
   -webkit-transition-property: -webkit-transform, opacity;
   -moz-transition-property: -moz-transform, opacity;
@@ -9148,7 +9175,7 @@ ul#filters li a:hover {
 }
 
 /**** disabling Isotope CSS3 transitions ****/
-/* line 317, sass/_mia-theme-styles.scss */
+/* line 343, sass/_mia-theme-styles.scss */
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
@@ -9159,11 +9186,11 @@ ul#filters li a:hover {
   transition-duration: 0s;
 }
 
-/* line 328, sass/_mia-theme-styles.scss */
+/* line 354, sass/_mia-theme-styles.scss */
 #isotope-list .element-item {
   width: 33%;
 }
-/* line 330, sass/_mia-theme-styles.scss */
+/* line 356, sass/_mia-theme-styles.scss */
 #isotope-list .element-item img.size-medium {
   width: 100% !important;
 }
@@ -9171,7 +9198,7 @@ ul#filters li a:hover {
 /* =============================== */
 /* Footer Styles                  */
 /* =============================== */
-/* line 338, sass/_mia-theme-styles.scss */
+/* line 364, sass/_mia-theme-styles.scss */
 .container-fluid.footer-container {
   min-height: 50px;
   background: #404040;
@@ -9179,11 +9206,11 @@ ul#filters li a:hover {
   margin-top: 50px;
   padding-bottom: 10px;
 }
-/* line 344, sass/_mia-theme-styles.scss */
+/* line 370, sass/_mia-theme-styles.scss */
 .container-fluid.footer-container .fa {
   display: inline-block;
 }
-/* line 348, sass/_mia-theme-styles.scss */
+/* line 374, sass/_mia-theme-styles.scss */
 .container-fluid.footer-container a.sc-icons {
   padding: 10px;
   opacity: 1;
@@ -9195,23 +9222,23 @@ ul#filters li a:hover {
   color: #1abc9c;
   font-size: 1em;
 }
-/* line 360, sass/_mia-theme-styles.scss */
+/* line 386, sass/_mia-theme-styles.scss */
 .container-fluid.footer-container a.sc-icons:visited,
 .container-fluid.footer-container a.sc-icons:hover {
   color: #84ffe7;
 }
-/* line 365, sass/_mia-theme-styles.scss */
+/* line 391, sass/_mia-theme-styles.scss */
 .container-fluid.footer-container a.sc-icons:hover {
   opacity: 1;
 }
-/* line 368, sass/_mia-theme-styles.scss */
+/* line 394, sass/_mia-theme-styles.scss */
 .container-fluid.footer-container .site-info {
   color: #1abc9c;
   font-family: Arial,sans-serif;
   font-size: 14px;
   padding-top: 10px;
 }
-/* line 373, sass/_mia-theme-styles.scss */
+/* line 399, sass/_mia-theme-styles.scss */
 .container-fluid.footer-container .site-info a {
   color: #1abc9c;
 }
@@ -9219,38 +9246,38 @@ ul#filters li a:hover {
 /* =============================== */
 /* Sidebar                         */
 /* =============================== */
-/* line 384, sass/_mia-theme-styles.scss */
+/* line 410, sass/_mia-theme-styles.scss */
 aside#secondary h2 {
   font-size: 2.75rem;
 }
-/* line 388, sass/_mia-theme-styles.scss */
+/* line 414, sass/_mia-theme-styles.scss */
 aside#secondary ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 392, sass/_mia-theme-styles.scss */
+/* line 418, sass/_mia-theme-styles.scss */
 aside#secondary ul li {
   float: none;
 }
-/* line 394, sass/_mia-theme-styles.scss */
+/* line 420, sass/_mia-theme-styles.scss */
 aside#secondary ul li a {
   color: #404040;
 }
-/* line 398, sass/_mia-theme-styles.scss */
+/* line 424, sass/_mia-theme-styles.scss */
 aside#secondary ul li a:hover {
   color: #84ffe7;
 }
-/* line 403, sass/_mia-theme-styles.scss */
+/* line 429, sass/_mia-theme-styles.scss */
 aside#secondary .search-form label {
   width: 75%;
 }
-/* line 406, sass/_mia-theme-styles.scss */
+/* line 432, sass/_mia-theme-styles.scss */
 aside#secondary input[type="submit"] {
   top: -2px;
   position: relative;
 }
-/* line 410, sass/_mia-theme-styles.scss */
+/* line 436, sass/_mia-theme-styles.scss */
 aside#secondary input[type=search] {
   background: transparent;
   border: 1px solid #404040;
@@ -9258,22 +9285,22 @@ aside#secondary input[type=search] {
   padding-top: 0;
   width: 100%;
 }
-/* line 417, sass/_mia-theme-styles.scss */
+/* line 443, sass/_mia-theme-styles.scss */
 aside#secondary input[type=search]::-webkit-input-placeholder {
   color: #404040;
   font-size: 14px;
 }
-/* line 421, sass/_mia-theme-styles.scss */
+/* line 447, sass/_mia-theme-styles.scss */
 aside#secondary input[type=search]:-moz-placeholder {
   color: #404040;
   font-size: 14px;
 }
-/* line 425, sass/_mia-theme-styles.scss */
+/* line 451, sass/_mia-theme-styles.scss */
 aside#secondary input[type=search]::-moz-placeholder {
   color: #404040;
   font-size: 14px;
 }
-/* line 429, sass/_mia-theme-styles.scss */
+/* line 455, sass/_mia-theme-styles.scss */
 aside#secondary input[type=search]:-ms-input-placeholder {
   color: #404040;
   font-size: 14px;
@@ -9283,30 +9310,30 @@ aside#secondary input[type=search]:-ms-input-placeholder {
 /* Media Queries                  */
 /* =============================== */
 @media (max-width: 480px) {
-  /* line 440, sass/_mia-theme-styles.scss */
+  /* line 466, sass/_mia-theme-styles.scss */
   aside#secondary {
     padding-top: 0px;
   }
 
-  /* line 443, sass/_mia-theme-styles.scss */
+  /* line 469, sass/_mia-theme-styles.scss */
   .fa-3x {
     font-size: 2em;
   }
 
-  /* line 446, sass/_mia-theme-styles.scss */
+  /* line 472, sass/_mia-theme-styles.scss */
   .modal-content {
     padding: 10% 5% !important;
   }
-  /* line 448, sass/_mia-theme-styles.scss */
+  /* line 474, sass/_mia-theme-styles.scss */
   .modal-content .fa-5x {
     font-size: 2em;
   }
 
-  /* line 453, sass/_mia-theme-styles.scss */
+  /* line 479, sass/_mia-theme-styles.scss */
   .menu-primary .nav {
     margin: 0;
   }
-  /* line 456, sass/_mia-theme-styles.scss */
+  /* line 482, sass/_mia-theme-styles.scss */
   .menu-primary .nav > li > a {
     padding: 0;
     font-size: 5rem !important;
@@ -9314,55 +9341,55 @@ aside#secondary input[type=search]:-ms-input-placeholder {
     line-height: 1.25em;
   }
 
-  /* line 467, sass/_mia-theme-styles.scss */
+  /* line 493, sass/_mia-theme-styles.scss */
   ul#filters li a {
     padding: 3px 5px;
   }
 
-  /* line 474, sass/_mia-theme-styles.scss */
+  /* line 500, sass/_mia-theme-styles.scss */
   #isotope-list .element-item {
     width: 99% !important;
   }
-  /* line 476, sass/_mia-theme-styles.scss */
+  /* line 502, sass/_mia-theme-styles.scss */
   #isotope-list .element-item img.size-medium {
     width: 100% !important;
   }
 
-  /* line 481, sass/_mia-theme-styles.scss */
+  /* line 507, sass/_mia-theme-styles.scss */
   .site-info {
     text-align: center;
   }
 
-  /* line 484, sass/_mia-theme-styles.scss */
+  /* line 510, sass/_mia-theme-styles.scss */
   .icons-box-footer {
     text-align: center !important;
   }
 }
 @media (max-width: 768px) {
-  /* line 492, sass/_mia-theme-styles.scss */
+  /* line 518, sass/_mia-theme-styles.scss */
   .fa-3x {
     font-size: 2em;
   }
 
-  /* line 495, sass/_mia-theme-styles.scss */
+  /* line 521, sass/_mia-theme-styles.scss */
   .fa-5x {
     font-size: 2em;
   }
 
-  /* line 499, sass/_mia-theme-styles.scss */
+  /* line 525, sass/_mia-theme-styles.scss */
   .menu-primary .nav {
     margin: 0;
   }
-  /* line 502, sass/_mia-theme-styles.scss */
+  /* line 528, sass/_mia-theme-styles.scss */
   .menu-primary .nav > li > a {
     font-size: 5rem;
   }
 
-  /* line 509, sass/_mia-theme-styles.scss */
+  /* line 535, sass/_mia-theme-styles.scss */
   #isotope-list .element-item {
     width: 50%;
   }
-  /* line 511, sass/_mia-theme-styles.scss */
+  /* line 537, sass/_mia-theme-styles.scss */
   #isotope-list .element-item img.size-medium {
     width: 100% !important;
   }
