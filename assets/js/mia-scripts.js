@@ -43,3 +43,21 @@ console.log('Made with passion and lots of coffee, from the beautiful Costa Rica
 
   ga('create', 'UA-86116984-1', 'auto');
   ga('send', 'pageview');
+
+	// placeholder no display on focus
+
+	$(function()
+{
+      $('input').focusin(function()
+      {
+        input = $(this);
+        input.data('place-holder-text', input.attr('placeholder'))
+        input.attr('placeholder', '');
+      });
+
+      $('input').focusout(function()
+      {
+          input = $(this);
+          input.attr('placeholder', input.data('place-holder-text'));
+      });
+})

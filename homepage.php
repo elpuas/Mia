@@ -1,7 +1,7 @@
 <?php /* Template Name: Homepage */
 
 get_header(); ?>
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel">
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
@@ -24,6 +24,8 @@ get_header(); ?>
     <span class="sr-only">Next</span>
   </a> -->
 </div>
+<!-- Manually added xs image -->
+<div class="col-xs-12"><img src="https://www.elpuas.com/wp-content/uploads/2016/10/sm-gfx.png" class="img-responsive visible-xs" /></div>
  <div class="row">
  <div class="col-md-12">
 	<div id="primary" class="content-area">

@@ -1,37 +1,42 @@
 /* =============================== */
 /* Common Styles                   */
 /* =============================== */
+
 a {
-  color: $brand-secondary;
+    color: $brand-secondary;
 }
-a:focus, a:hover {
- text-decoration: none;
+
+a:focus,
+a:hover {
+    text-decoration: none;
 }
+
 a:visited {
     color: $brand-secondary;
 }
+
 .img-responsive {
-  width: 100%;
+    width: 100%;
 }
 
 input[type="submit"] {
-  padding:10px 10px;
-  color:$brand-tertiary;
-  border:solid 1px;
-  box-shadow: none;
-  text-shadow: none;
-  background: transparent;
-  top: -2px;
-  position: relative;
-  font-size: 12px;
-
+    padding: 10px 10px;
+    color: $brand-tertiary;
+    border: solid 1px;
+    box-shadow: none;
+    text-shadow: none;
+    background: transparent;
+    top: -2px;
+    position: relative;
+    font-size: 12px;
 }
+
 input[type="submit"]:hover {
-  box-shadow: none;
-  text-shadow: none;
-  background: transparent;
-  color: $brand-secondary;
-  border-color: $brand-secondary;
+    box-shadow: none;
+    text-shadow: none;
+    background: transparent;
+    color: $brand-secondary;
+    border-color: $brand-secondary;
 }
 
 span.comments-link {
@@ -42,42 +47,43 @@ nav.navigation.post-navigation {
     padding-bottom: 15px;
     padding-top: 15px;
     .nav-links a {
-    color: $brand-tertiary;
-    font-size: 14px;
-    padding: 10px 15px;
-    border: solid 1px;
-    border-radius: 3px;
-  }
-  .nav-links a:hover {
-    color: $brand-secondary
-  }
+        color: $brand-tertiary;
+        font-size: 14px;
+        padding: 10px 15px;
+        border: solid 1px;
+        border-radius: 3px;
+        font-family: fontAwesome;
+    }
+    .nav-links a:hover {
+        color: $brand-secondary
+    }
 }
 
 .overlay {
-  position: relative;
-  display: block;
+    position: relative;
+    display: block;
 }
 
-.overlay:before{
-  position: absolute;
-  font-family: FontAwesome;
-  content:"\f08e";
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  display: none;
-  z-index:0;
-  color: $brand-white;
-  padding-top: 35%;
-  padding-left: 40%;
-  font-size: 4em;
+.overlay:before {
+    position: absolute;
+    font-family: FontAwesome;
+    content: "\f08e";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 0;
+    color: $brand-white;
+    padding-top: 35%;
+    padding-left: 40%;
+    font-size: 4em;
 }
 
-.overlay:hover:before{
-  display: block;
-  background-color: $brand-secondary;
-  opacity: 0.7;
+.overlay:hover:before {
+    display: block;
+    background-color: $brand-secondary;
+    opacity: 0.7;
 }
 
 
@@ -86,37 +92,43 @@ nav.navigation.post-navigation {
     font-family: Arial, sans-serif;
     color: #84ffe4;
     text-transform: uppercase;
-      span.posted-on:before {
+    span.posted-on:before {
         font-family: FontAwesome;
         content: "\f073";
         font-size: 14px;
         margin-right: 5px;
-      }
-      span.byline:before {
+    }
+    span.byline:before {
         font-family: FontAwesome;
         content: "\f21b";
         font-size: 14px;
-        margin-left:5px;
-
-      }
+        margin-left: 5px;
+    }
 }
 
 aside#secondary {
     padding-top: 43%;
 }
 
+.nav>li>a:focus {
+  background: transparent;
+}
 /* =============================== */
 /* Hamburguer Styles               */
 /* =============================== */
+
 .theme-hamburguer {
-  float: right;
-  color: $brand-white;
-  margin-top: 50px;
-  cursor: pointer;
+    float: right;
+    color: $brand-white;
+    margin-top: 50px;
+    cursor: pointer;
 }
+
 a:hover {
-  color: $brand-secondary;
+    color: $brand-secondary;
 }
+
+
 /* =============================== */
 /* Nav Modal Styles                */
 /* =============================== */
@@ -143,25 +155,26 @@ div#nav-modal {
                 }
             }
             .menu-primary {
-                .nav{
-                  >li{
-                   float: none;
-                    >a {
-                      padding: 0;
-                      font-size: 8rem;
-                      color: $brand-main;
-                      line-height: 1.25em;
-                  }
+                .nav {
+                    >li {
+                        float: none;
+                        >a {
+                            padding: 0;
+                            font-size: 8rem;
+                            color: $brand-main;
+                            line-height: 1.25em;
+                        }
+                    }
                 }
-              }
                 .nav>li>a:hover {
-                  background-color: transparent;
-                  color:$brand-tertiary;
+                    background-color: transparent;
+                    color: $brand-tertiary;
                 }
             }
         }
     }
 }
+
 
 /* =============================== */
 /* Slider Styles                   */
@@ -185,182 +198,205 @@ div#nav-modal {
         right: 15%;
     }
 }
+
+
 /* =============================== */
 /* Homepage Styles                  */
 /* =============================== */
 
 body.page-template-homepage {
-  .theme-icon-container {
-    text-align: center;
-  }
-  h2 {
-    color: $brand-secondary;
-    font-size: 4rem;
-  }
-  .textwidget {
-    font-size: 2.5rem;
-    color: $brand-tertiary;
-    a {
-      color: $brand-secondary;
+    .theme-icon-container {
+        text-align: center;
     }
-  }
+    h2 {
+        color: $brand-secondary;
+        font-size: 4rem;
+    }
+    .textwidget {
+        font-size: 2.5rem;
+        color: $brand-tertiary;
+        a {
+            color: $brand-secondary;
+        }
+    }
 }
+
+
 /* =============================== */
-/* Single Portfolio Styles         */
+/* Single Pages                    */
 /* =============================== */
 
-body.single-portfolio {
-  aside#secondary {
-    padding-top: 31%;
-  }
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    li {
-      float: left;
-      .devicons {
-        font-size: 5.25rem;
-      }
-    }
-  }
-}
-body.single-post {
+body.page-contact {
   header.entry-header {
       border-bottom: 2em solid $brand-tertiary;
+    }
+    aside#secondary {
+        padding-top: 31%;
+    }
   }
-  aside#secondary {
-    padding-top: 36%;
-  }
+
+body.single-portfolio {
+  header.entry-header {
+      border-bottom: 2em solid $brand-tertiary;
+    }
+    aside#secondary {
+        padding-top: 31%;
+    }
+    ul.workflow-icons {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            .devicons {
+                font-size: 4.5rem;
+            }
+        }
+    }
 }
+
+body.single-post {
+    header.entry-header {
+        border-bottom: 2em solid $brand-tertiary;
+    }
+    aside#secondary {
+        padding-top: 36%;
+    }
+}
+
 
 /* =============================== */
 /* Page Profile                    */
 /* =============================== */
 
 body.page-profile {
-  header.entry-header {
-      border-bottom: 2em solid $brand-tertiary;
-  }
-  ul.workflow-icons{
-    list-style: none;
-    margin: 25px 0 10px 0;
-    padding: 0;
-    li {
-      display: inline-block;
-      margin-bottom: 25px;
-      span {
-        font-size: 6rem;
-      }
+    header.entry-header {
+        border-bottom: 2em solid $brand-tertiary;
     }
-  }
-  aside#secondary {
-    padding-top: 31%;
+    ul.workflow-icons {
+        list-style: none;
+        margin: 25px 0 10px 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            margin-bottom: 25px;
+            span {
+                font-size: 6rem;
+            }
+        }
+    }
+    aside#secondary {
+        padding-top: 31%;
+    }
 }
-}
+
 
 /* =============================== */
 /* Archive Styles         */
 /* =============================== */
- body.archive {
-   .page-header {
-     border-bottom: 2em solid $brand-tertiary;
-   }
-   h2.entry-title {
-     margin-top: 0;
-     a {
-       color:$brand-tertiary;
-     }
-     a:hover {
-       color:$brand-secondary;
-     }
-   }
- }
 
+body.archive {
+    .page-header {
+        border-bottom: 2em solid $brand-tertiary;
+    }
+    h2.entry-title {
+        margin-top: 0;
+        a {
+            color: $brand-tertiary;
+        }
+        a:hover {
+            color: $brand-secondary;
+        }
+    }
+}
 /* =============================== */
 /* Isotope Styles                  */
 /* =============================== */
 
 ul#filters {
-  list-style: none;
-  margin:0;
-  padding: 0;
-  margin-bottom: 1em;
-  li {
-    display: inline-block;
-    a {
-      padding:10px 15px;
-      color:$brand-tertiary;
-      font-size: 16px;
-      border:solid 1px;
-      border-radius: 3px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1em;
+    li {
+        display: inline-block;
+        a {
+            padding: 10px 15px;
+            color: $brand-tertiary;
+            font-size: 16px;
+            border: solid 1px;
+            border-radius: 3px;
+        }
+        a:hover {
+            color: $brand-secondary;
+        }
     }
-    a:hover {
-      color:$brand-secondary;
-    }
-  }
-
 }
 
 .isotope-item {
-  z-index: 2;
+    z-index: 2;
 }
 
 .isotope-hidden.isotope-item {
-  pointer-events: none;
-  z-index: 1;
+    pointer-events: none;
+    z-index: 1;
 }
+
 
 /**** Isotope CSS3 transitions ****/
 
 .isotope,
 .isotope .isotope-item {
-  -webkit-transition-duration: 0.8s;
-     -moz-transition-duration: 0.8s;
-      -ms-transition-duration: 0.8s;
-       -o-transition-duration: 0.8s;
-          transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
 }
 
 .isotope {
-  -webkit-transition-property: height, width;
-     -moz-transition-property: height, width;
-      -ms-transition-property: height, width;
-       -o-transition-property: height, width;
-          transition-property: height, width;
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
 }
 
 .isotope .isotope-item {
-  -webkit-transition-property: -webkit-transform, opacity;
-     -moz-transition-property:    -moz-transform, opacity;
-      -ms-transition-property:     -ms-transform, opacity;
-       -o-transition-property:      -o-transform, opacity;
-          transition-property:         transform, opacity;
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -ms-transition-property: -ms-transform, opacity;
+    -o-transition-property: -o-transform, opacity;
+    transition-property: transform, opacity;
 }
+
 
 /**** disabling Isotope CSS3 transitions ****/
 
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
-  -webkit-transition-duration: 0s;
-     -moz-transition-duration: 0s;
-      -ms-transition-duration: 0s;
-       -o-transition-duration: 0s;
-          transition-duration: 0s;
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -ms-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
 }
 
 #isotope-list {
-  .element-item {
-    width: 33%;
-    img.size-medium {
-      width: 100% !important;
+    .element-item {
+        width: 33%;
+        img.size-medium {
+            width: 100% !important;
+        }
     }
-  }
 }
+
+
 /* =============================== */
 /* Footer Styles                  */
 /* =============================== */
+
 .container-fluid.footer-container {
     min-height: 50px;
     background: $brand-tertiary;
@@ -368,9 +404,8 @@ ul#filters {
     margin-top: 50px;
     padding-bottom: 10px;
     .fa {
-      display: inline-block;
+        display: inline-block;
     }
-
     a.sc-icons {
         padding: 10px;
         opacity: 1;
@@ -382,99 +417,199 @@ ul#filters {
         color: $brand-main;
         font-size: 1em;
     }
-
     a.sc-icons:visited,
     a.sc-icons:hover {
         color: $brand-secondary;
     }
-
     a.sc-icons:hover {
         opacity: 1;
     }
     .site-info {
-      color: $brand-main;
-      font-family: Arial,sans-serif;
-      font-size: 14px;
-      padding-top: 10px;
-    a {
-      color: $brand-main;
+        color: $brand-main;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        padding-top: 10px;
+        a {
+            color: $brand-main;
+        }
     }
-  }
 }
+
 
 /* =============================== */
 /* Sidebar                         */
 /* =============================== */
 
 aside#secondary {
-  h2 {
-    font-size: 2.75rem;
-
-  }
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    li {
-      float: none;
-      a {
+    h2 {
+        font-size: 2.75rem;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            float: none;
+            a {
+                color: $brand-tertiary;
+            }
+            a:hover {
+                color: $brand-secondary;
+            }
+        }
+    }
+    .search-form label {
+        width: 75%;
+    }
+    input[type="submit"] {
+        top: -2px;
+        position: relative;
+    }
+    input[type=search] {
+        background: transparent;
+        border: 1px solid $brand-tertiary;
         color: $brand-tertiary;
+        padding-top: 0;
+        width: 100%;
+    }
+    input[type=search]::-webkit-input-placeholder {
+        color: $brand-tertiary;
+        font-size: 14px;
+    }
+    input[type=search]:-moz-placeholder {
+        color: $brand-tertiary;
+        font-size: 14px;
+    }
+    input[type=search]::-moz-placeholder {
+        color: $brand-tertiary;
+        font-size: 14px;
+    }
+    input[type=search]:-ms-input-placeholder {
+        color: $brand-tertiary;
+        font-size: 14px;
+    }
+}
 
-      }
-      a:hover {
-        color: $brand-secondary;
+/* =============================== */
+/* Form                            */
+/* =============================== */
+body.page-contact {
+  form.wpcf7-form {
+    input[type=text]{
+      width: 100%;
+      background: rgba(255, 255, 255, 0.29);
+      border: 0;
+    }
+    input[type=email]{
+      width: 100%;
+      background: rgba(255, 255, 255, 0.29);
+      border: 0;
+    }
+    textarea {
+      background: rgba(255, 255, 255, 0.29);
+      border: 0;
+    }
+    p {
+      text-align: right;
+        input[type=submit]{
+          padding: 15px 50px;
       }
     }
   }
-  .search-form label {
-    width: 75%;
-}
-input[type="submit"] {
-  top: -2px;
-  position: relative;
-}
-  input[type=search] {
-      background: transparent;
-      border: 1px solid $brand-tertiary;
-      color: $brand-tertiary;
-      padding-top: 0;
-      width: 100%;
-  }
-  input[type=search]::-webkit-input-placeholder {
-    color: $brand-tertiary;
-    font-size: 14px;
-  }
-  input[type=search]:-moz-placeholder {
-    color: $brand-tertiary;
-    font-size: 14px;
-  }
-  input[type=search]::-moz-placeholder {
-    color: $brand-tertiary;
-    font-size: 14px;
-  }
-  input[type=search]:-ms-input-placeholder {
-    color: $brand-tertiary;
-    font-size: 14px;
-  }
+  ::-webkit-input-placeholder { color:$brand-tertiary; }
+  ::-moz-placeholder { color:$brand-tertiary; } /* firefox 19+ */
+  :-ms-input-placeholder { color:$brand-tertiary; } /* ie */
+  input:-moz-placeholder { color:$brand-tertiary; }
+
 }
 
 /* =============================== */
 /* Media Queries                  */
 /* =============================== */
 
-@media (max-width: $screen-phone) {
-  aside#secondary {
-      padding-top: 0px;
-  }
-  .fa-3x {
-    font-size: 2em;
-}
-  .modal-content {
-    padding: 10% 5% !important;
-    .fa-5x {
-    font-size: 2em;
+@media (max-width: $screen-tablet) {
+    body.single-portfolio {
+        aside#secondary {
+            padding-top: 0px;
+            section.widget_text {
+                width: 50%;
+                float: left;
+            }
+        }
     }
-  }
+    body.single-post {
+        aside#secondary {
+            padding-top: 0px;
+            section.widget_text {
+                width: 50%;
+                float: left;
+            }
+        }
+    }
+    .fa-3x {
+        font-size: 2em;
+    }
+    .fa-5x {
+        font-size: 2em;
+    }
+    .menu-primary {
+        .nav {
+            margin: 0;
+            >li {
+                >a {
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
+    #isotope-list {
+        .element-item {
+            width: 50%;
+            img.size-medium {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-phone) {
+    body.page-home {
+        main.site-main {
+            text-align: center;
+        }
+    }
+    aside#secondary {
+      text-align: center;
+    }
+    body.single-portfolio {
+        aside#secondary {
+            padding-top: 0px;
+            text-align: center;
+            section.widget_text {
+                width: 100%;
+                float: none;
+            }
+        }
+    }
+    body.single-post {
+        aside#secondary {
+            padding-top: 0px;
+            text-align: center;
+            section.widget_text {
+                width: 100%;
+                float: none;
+            }
+        }
+    }
+    .fa-3x {
+        font-size: 2em;
+    }
+    .modal-content {
+        padding: 10% 5% !important;
+        .fa-5x {
+            font-size: 2em;
+        }
+    }
     .menu-primary {
         .nav {
             margin: 0;
@@ -489,55 +624,24 @@ input[type="submit"] {
         }
     }
     ul#filters {
-      li {
-        a {
-          padding:3px 5px;
+        li {
+            a {
+                padding: 3px 5px;
+            }
         }
-      }
-
     }
     #isotope-list {
-      .element-item {
-        width: 99% !important;
-        img.size-medium {
-          width: 100% !important;
+        .element-item {
+            width: 99% !important;
+            img.size-medium {
+                width: 100% !important;
+            }
         }
-      }
     }
     .site-info {
-      text-align: center;
+        text-align: center;
     }
     .icons-box-footer {
-    text-align: center !important;
+        text-align: center !important;
     }
-}
-
-
-
-@media (max-width: $screen-tablet) {
-  .fa-3x {
-    font-size: 2em;
-  }
-  .fa-5x {
-  font-size: 2em;
-  }
-  .menu-primary {
-      .nav {
-          margin: 0;
-          >li {
-              >a {
-                  font-size: 5rem;
-              }
-          }
-      }
-  }
-  #isotope-list {
-    .element-item {
-      width: 50%;
-      img.size-medium {
-        width: 100% !important;
-      }
-    }
-  }
-
 }

@@ -14,6 +14,18 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="wordpress, developer,
+ui/ux, elpuas, el puas, front end, front-end,
+designer, illustrator, 3lpu4s, wordpress developer, wordcamp, web developer, web designer,
+advertising, wordpress designer, alfredo navas, carlo fernandini, responsive, mobile web, mobile, el puas dev,
+elpuasdev, front-end development, comics, sketches, comic artist, web developer costa rica, web designer costa rica" />
+<meta name="description" content="<?php if ( is_single() ) {
+        single_post_title('', true);
+    } else {
+        bloginfo('name'); echo " - "; bloginfo('description');
+    }
+    ?>" />
+<link href=/favicon.ico rel=icon>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <?php wp_head(); ?>

@@ -19,7 +19,10 @@ get_header(); ?>
 
 			get_template_part( 'template-parts/content-portfolio', get_post_format() );
 
-			the_post_navigation();
+			the_post_navigation(array(
+            'prev_text'                  => __( '&#xf104;' ),
+            'next_text'                  => __( '&#xf105;' ),
+        ));
 
     endwhile; // End of the loop.
 		?>
