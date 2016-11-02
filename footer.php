@@ -26,7 +26,7 @@
                 </div><!--col-md-8 -->
             <div class="col-md-4 col-sm-4 col-xs-12 pull-right icons-box-footer" style="text-align:right;">
 							<a class="sc-icons" href="twitter.com/3lpu4s"><i class="fa fa-twitter green"></i></a>
-							<a class="sc-icons" href="https://www.facebook.com/elpuasdev"><i class="fa fa-facebook-square green"></i></a>
+							<a type="button" class="sc-icons link-modal-mia" data-toggle="modal" data-target="#fb-modal"><i class="fa fa-facebook-square green"></i></a>
 							<a class="sc-icons" href="http://www.linkedin.com/pub/alfredo-navas-fernandini/28/489/62a"><i class="fa fa-linkedin green"></i></a>
 							<a class="sc-icons" href="https://plus.google.com/u/0/109068090628310748694"><i class="fa fa-google-plus-square green"></i></a>
 							<a class="sc-icons" href="https://github.com/elpuas"><i class="fa fa-github-alt green"></i></a>
@@ -35,30 +35,9 @@
 </div><!-- .container -->
 </div><!-- .container-fluid -->
 <!-- Navigation Modal -->
-<div class="modal fade" id="nav-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-         <div class="modal-header">
-        <a class="fa fa-close fa-5x" data-dismiss="modal"></a>
-        </div>
-        <div class="menu-primary">
-           <?php
-            wp_nav_menu( array(
-                'menu'              => '',
-                'theme_location'    => 'primary',
-                'depth'             => 2,
-                'container'         => '',
-                'container_class'   => 'nvbar',
-                'container_id'      => 'full-screen',
-                'menu_class'        => 'nav',
-                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                'walker'            => new wp_bootstrap_navwalker())
-            );
-            ?>
-             </div>
-    </div>
-  </div>
-</div><!-- End Modal -->
+<?php get_template_part( 'template-parts/modal', 'navigation' ); ?>
+<!-- Facebook Page Modal -->
+<?php get_template_part( 'template-parts/modal', 'facebook' ); ?>
 <?php wp_footer(); ?>
 
 </body>

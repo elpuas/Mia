@@ -9376,109 +9376,153 @@ body.page-contact input:-moz-placeholder {
 }
 
 /* =============================== */
+/* Facebook Modal                  */
+/* =============================== */
+/* line 529, sass/_mia-theme-styles.scss */
+.link-modal-mia {
+  cursor: pointer;
+}
+
+/* line 534, sass/_mia-theme-styles.scss */
+.modal-fb-mia .modal-dialog {
+  width: 320px;
+  position: absolute;
+  right: 100px;
+  bottom: 50px;
+}
+/* line 540, sass/_mia-theme-styles.scss */
+.modal-fb-mia .modal-content {
+  padding: 10px;
+}
+/* line 542, sass/_mia-theme-styles.scss */
+.modal-fb-mia .modal-content .modal-header {
+  padding: 0;
+  text-align: right;
+  padding-bottom: 10px;
+}
+/* line 546, sass/_mia-theme-styles.scss */
+.modal-fb-mia .modal-content .modal-header .close-modal-fb-mia {
+  font-family: Arial,sans-serif;
+  font-size: 16px;
+  color: white;
+  background-color: #1abc9c;
+  cursor: pointer;
+  padding: 5px 7px;
+  text-transform: uppercase;
+  font-size: 11px;
+  border-radius: 3px;
+}
+
+/* =============================== */
 /* Media Queries                  */
 /* =============================== */
 @media (max-width: 768px) {
-  /* line 532, sass/_mia-theme-styles.scss */
+  /* line 568, sass/_mia-theme-styles.scss */
   body.single-portfolio aside#secondary {
     padding-top: 0px;
   }
-  /* line 534, sass/_mia-theme-styles.scss */
+  /* line 570, sass/_mia-theme-styles.scss */
   body.single-portfolio aside#secondary section.widget_text {
     width: 50%;
     float: left;
   }
 
-  /* line 541, sass/_mia-theme-styles.scss */
+  /* line 577, sass/_mia-theme-styles.scss */
   body.single-post aside#secondary {
     padding-top: 0px;
   }
-  /* line 543, sass/_mia-theme-styles.scss */
+  /* line 579, sass/_mia-theme-styles.scss */
   body.single-post aside#secondary section.widget_text {
     width: 50%;
     float: left;
   }
 
-  /* line 549, sass/_mia-theme-styles.scss */
+  /* line 585, sass/_mia-theme-styles.scss */
   .fa-3x {
     font-size: 2em;
   }
 
-  /* line 552, sass/_mia-theme-styles.scss */
+  /* line 588, sass/_mia-theme-styles.scss */
   .fa-5x {
     font-size: 2em;
   }
 
-  /* line 556, sass/_mia-theme-styles.scss */
+  /* line 592, sass/_mia-theme-styles.scss */
   .menu-primary .nav {
     margin: 0;
   }
-  /* line 559, sass/_mia-theme-styles.scss */
+  /* line 595, sass/_mia-theme-styles.scss */
   .menu-primary .nav > li > a {
     font-size: 5rem;
   }
 
-  /* line 566, sass/_mia-theme-styles.scss */
+  /* line 602, sass/_mia-theme-styles.scss */
   #isotope-list .element-item {
     width: 50%;
   }
-  /* line 568, sass/_mia-theme-styles.scss */
+  /* line 604, sass/_mia-theme-styles.scss */
   #isotope-list .element-item img.size-medium {
     width: 100% !important;
   }
 }
 @media (max-width: 480px) {
-  /* line 577, sass/_mia-theme-styles.scss */
+  /* line 613, sass/_mia-theme-styles.scss */
   body.page-home main.site-main {
     text-align: center;
   }
 
-  /* line 581, sass/_mia-theme-styles.scss */
+  /* line 618, sass/_mia-theme-styles.scss */
+  .modal-fb-mia .modal-dialog {
+    right: 10%;
+    bottom: 50px;
+  }
+
+  /* line 623, sass/_mia-theme-styles.scss */
   aside#secondary {
     text-align: center;
   }
 
-  /* line 585, sass/_mia-theme-styles.scss */
+  /* line 627, sass/_mia-theme-styles.scss */
   body.single-portfolio aside#secondary {
     padding-top: 0px;
     text-align: center;
   }
-  /* line 588, sass/_mia-theme-styles.scss */
+  /* line 630, sass/_mia-theme-styles.scss */
   body.single-portfolio aside#secondary section.widget_text {
     width: 100%;
     float: none;
   }
 
-  /* line 595, sass/_mia-theme-styles.scss */
+  /* line 637, sass/_mia-theme-styles.scss */
   body.single-post aside#secondary {
     padding-top: 0px;
     text-align: center;
   }
-  /* line 598, sass/_mia-theme-styles.scss */
+  /* line 640, sass/_mia-theme-styles.scss */
   body.single-post aside#secondary section.widget_text {
     width: 100%;
     float: none;
   }
 
-  /* line 604, sass/_mia-theme-styles.scss */
+  /* line 646, sass/_mia-theme-styles.scss */
   .fa-3x {
     font-size: 2em;
   }
 
-  /* line 607, sass/_mia-theme-styles.scss */
+  /* line 649, sass/_mia-theme-styles.scss */
   .modal-content {
     padding: 10% 5% !important;
   }
-  /* line 609, sass/_mia-theme-styles.scss */
+  /* line 651, sass/_mia-theme-styles.scss */
   .modal-content .fa-5x {
     font-size: 2em;
   }
 
-  /* line 614, sass/_mia-theme-styles.scss */
+  /* line 656, sass/_mia-theme-styles.scss */
   .menu-primary .nav {
     margin: 0;
   }
-  /* line 617, sass/_mia-theme-styles.scss */
+  /* line 659, sass/_mia-theme-styles.scss */
   .menu-primary .nav > li > a {
     padding: 0;
     font-size: 5rem !important;
@@ -9486,26 +9530,26 @@ body.page-contact input:-moz-placeholder {
     line-height: 1.25em;
   }
 
-  /* line 628, sass/_mia-theme-styles.scss */
+  /* line 670, sass/_mia-theme-styles.scss */
   ul#filters li a {
     padding: 3px 5px;
   }
 
-  /* line 634, sass/_mia-theme-styles.scss */
+  /* line 676, sass/_mia-theme-styles.scss */
   #isotope-list .element-item {
     width: 99% !important;
   }
-  /* line 636, sass/_mia-theme-styles.scss */
+  /* line 678, sass/_mia-theme-styles.scss */
   #isotope-list .element-item img.size-medium {
     width: 100% !important;
   }
 
-  /* line 641, sass/_mia-theme-styles.scss */
+  /* line 683, sass/_mia-theme-styles.scss */
   .site-info {
     text-align: center;
   }
 
-  /* line 644, sass/_mia-theme-styles.scss */
+  /* line 686, sass/_mia-theme-styles.scss */
   .icons-box-footer {
     text-align: center !important;
   }

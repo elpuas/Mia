@@ -524,6 +524,42 @@ body.page-contact {
 }
 
 /* =============================== */
+/* Facebook Modal                  */
+/* =============================== */
+.link-modal-mia {
+  cursor: pointer;
+}
+
+.modal-fb-mia {
+   .modal-dialog {
+    width: 320px;
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+}
+.modal-content {
+    padding: 10px;
+    .modal-header {
+      padding: 0;
+      text-align: right;
+      padding-bottom: 10px;
+      .close-modal-fb-mia {
+        font-family: Arial,sans-serif;
+        font-size: 16px;
+        color: white;
+        background-color: $brand-main;
+        cursor: pointer;
+        padding: 5px 7px;
+        text-transform: uppercase;
+        font-size: 11px;
+        border-radius: 3px;
+      }
+    }
+}
+}
+
+
+/* =============================== */
 /* Media Queries                  */
 /* =============================== */
 
@@ -578,6 +614,12 @@ body.page-contact {
             text-align: center;
         }
     }
+    .modal-fb-mia {
+       .modal-dialog {
+        right: 10%;
+        bottom: 50px;
+    }
+  }
     aside#secondary {
       text-align: center;
     }
