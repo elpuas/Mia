@@ -21,7 +21,7 @@
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'mia' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'mia' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', '3LPU4S' ), 'Mia', '<a href="http://alfredonavas.com/" rel="designer">3LPU4S</a>' ); ?>
+			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', '3LPU4S' ), 'Mia', '<a href="https://www.elpuas.com/" rel="designer">3LPU4S</a>' ); ?>
 		</div><!-- .site-info -->
                 </div><!--col-md-8 -->
             <div class="col-md-4 col-sm-4 col-xs-12 pull-right icons-box-footer" style="text-align:right;">
