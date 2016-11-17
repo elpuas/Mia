@@ -86,3 +86,14 @@ $(document).ready(function() {
     hljs.highlightBlock(block);
   });
 });
+
+// Animate CSS
+$(document).ready(function() {
+ $('#site-logo img').hover(
+	 function(){
+		 $(this).addClass('animated rubberBand').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+			 $(this).removeClass('animated rubberBand')
+		 });
+	 }
+ )
+});
